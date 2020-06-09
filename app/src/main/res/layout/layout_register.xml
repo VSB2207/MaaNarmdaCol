@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:text="@string/register"
+            android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                style="@style/modifiedEditText"
+                android:inputType="text"
+                android:id="@+id/ed_reg_name"
+                android:maxLines="1"
+                android:hint="Name"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                style="@style/modifiedEditText"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:id="@+id/ed_reg_Mobileno"
+                android:hint="Mobile Number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                style="@style/modifiedEditText"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:id="@+id/ed_reg_username"
+                android:hint="@string/login_email_hint"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/progressBarSignup"
+            android:visibility="gone"
+            />
+
+        <Spinner
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top"
+            android:entries="@array/Clg_Array"
+            android:background="@drawable/spinnerbg"
+            android:id="@+id/spinner_subject"
+        />
+        <Spinner
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top"
+            android:background="@drawable/spinnerbg"
+            android:entries="@array/course"
+            android:id="@+id/spinner_subject_college"
+        />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+            <EditText
+                style="@style/modifiedEditText"
+                android:hint="@string/login_password_hint"
+                android:maxLines="1"
+                android:id="@+id/ed_reg_password"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            style="@style/loginButton"
+            android:layout_gravity="center"
+            android:text="Register"
+            android:id="@+id/bt_reg_submit"
+            />
+        <TextView
+            style="@style/parent"
+            android:textAlignment="inherit"
+            android:textStyle="bold"
+            android:id="@+id/TV_enquiry"
+            android:textColor="@android:color/holo_orange_light"
+            android:text="Enquiry   "
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:gravity="center_horizontal" />
+        <TextView
+            style="@style/parent"
+            android:textAlignment="inherit"
+            android:textStyle="bold"
+            android:id="@+id/TV_admission"
+            android:textColor="@android:color/holo_orange_light"
+            android:text="Admission"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:gravity="center_horizontal" />
+        <TextView
+            style="@style/parent"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:id="@+id/tv_login"
+            android:textColor="@android:color/holo_orange_light"
+            android:text="@string/signup_login_hint"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

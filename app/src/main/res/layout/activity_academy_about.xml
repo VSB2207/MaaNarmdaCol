@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            style="@style/loginCard"
+            app:cardCornerRadius="@dimen/loginCardRadius"
+            android:elevation="5dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:layout_marginBottom="@dimen/loginViewsMargin"
+            android:background="@color/whiteCardColor">
+
+
+
+            <LinearLayout
+                style="@style/linearParent"
+                android:layout_gravity="center"
+                android:padding="@dimen/loginViewsMargin">
+
+                <ImageView
+                    style="@style/headerTextPrimary"
+                    android:layout_width="180dp"
+                    android:id="@+id/IV_logo"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:src="@drawable/mna"
+                    />
+
+                <TextView
+                    style="@style/headerTextPrimary"
+                    android:text="About us"
+                    android:textSize="35dp"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="arial"
+                    android:padding="10dp"
+                    android:text="Maa Narmada Academy is a co-educational School, it offers classes from 9th to 12th providing a blend of academics, sports, cultural and artistic activities in a high quality environment. The Academy comprises a spacious and modern building."
+                    android:textColor="#000"
+                    android:textSize="16dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Classes:"
+                    android:fontFamily="arial"
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9th , 10th , 11th , 12th"
+                    android:fontFamily="arial"
+                    android:textColor="#000"
+                    android:padding="20dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact:"
+                    android:fontFamily="arial"
+                    style="bold"
+                    android:layout_gravity="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:padding="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+918224808050 \n mndcdhamnod03@gmail.com"
+                    android:textColor="#000"
+                    android:padding="20dp"
+                    />
+
+
+                <Button
+                    android:id="@+id/bt_academy_admission"
+                    style="@style/loginButton"
+                    android:text="Admission-Registration"
+                    android:padding="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    />
+                <Button
+                    android:id="@+id/bt_academy_enquiry"
+                    style="@style/loginButton"
+                    android:text="Admission-Enquiry"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    />
+               <Button
+                    android:id="@+id/bt_academy_gallery"
+                    style="@style/loginButton"
+                    android:text="Gallery"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:id="@+id/IV_academy_image1"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/image4"
+                    />
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:layout_margin="8dp"
+                    android:id="@+id/IV_academy_image2"
+                    android:background="@drawable/image2"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:layout_margin="8dp"
+                    android:id="@+id/IV_academy_image3"
+                    android:background="@drawable/image3"
+                    />
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:padding="20dp"
+                    android:layout_margin="8dp"
+                    android:id="@+id/IV_academy_image4"
+                    android:background="@drawable/image6"
+                    />
+
+            </LinearLayout>
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</ScrollView>

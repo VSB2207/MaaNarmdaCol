@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.college.paymentgatway">
+
+    <EditText
+        android:id="@+id/name"
+        style="@style/parent"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:paddingLeft="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:inputType="text"
+        android:hint="Enter  name"
+        />
+    <EditText
+        android:id="@+id/email"
+        android:inputType="textEmailAddress"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="40dp"
+        android:hint="Enter  Email id"
+        />
+    <EditText
+        android:id="@+id/phone"
+        android:inputType="phone"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:paddingLeft="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:hint="Enter  phone"
+        />
+
+    <EditText
+        android:id="@+id/address"
+        android:inputType="text"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:paddingLeft="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:hint="Enter Address"
+        />
+    <TextView
+        android:id="@+id/amountview"
+        android:layout_width="193dp"
+        android:layout_height="40dp"
+        android:paddingLeft="40dp"
+        android:layout_gravity="center"
+        android:text="loading...."
+        android:paddingTop="10dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#FF5722"></TextView>
+
+
+
+    <Button
+        android:inputType="number"
+        android:id="@+id/paybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:textColor="#ffff"
+        android:background="@drawable/joinclassbg"></Button>
+
+</LinearLayout>

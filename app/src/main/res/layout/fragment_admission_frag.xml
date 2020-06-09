@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+ <androidx.cardview.widget.CardView
+     style="@style/loginCard"
+     app:cardCornerRadius="30dp"
+     android:layout_gravity="center"
+     android:layout_margin="16dp"
+     app:cardBackgroundColor="@color/whiteCardColor">
+
+  <LinearLayout
+      android:layout_height="match_parent"
+      android:layout_width="match_parent"
+      android:layout_gravity="center"
+      android:orientation="vertical"
+      android:padding="20dp">
+
+   <ImageView
+       android:text="Login"
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:layout_gravity="center_horizontal"
+       android:src="@drawable/admission"
+       android:layout_marginTop="30dp"
+       />
+
+   <com.google.android.material.textfield.TextInputLayout
+       style="@style/parent"
+       android:layout_marginTop="@dimen/loginViewsMargin">
+    <EditText
+        style="@style/modifiedEditText"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:id="@+id/ed_adm_name"
+        android:hint="Name"/>
+   </com.google.android.material.textfield.TextInputLayout>
+   <com.google.android.material.textfield.TextInputLayout
+       style="@style/parent"
+       android:layout_marginTop="@dimen/loginViewsMargin">
+    <EditText
+        style="@style/modifiedEditText"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:id="@+id/ed_adm_fathername"
+        android:hint="Father Name"/>
+   </com.google.android.material.textfield.TextInputLayout>
+   <com.google.android.material.textfield.TextInputLayout
+       style="@style/parent"
+       android:layout_marginTop="@dimen/loginViewsMargin">
+    <EditText
+        style="@style/modifiedEditText"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:id="@+id/ed_adm_mothername"
+        android:hint="Mother Name"/>
+   </com.google.android.material.textfield.TextInputLayout>
+
+   <com.google.android.material.textfield.TextInputLayout
+       style="@style/parent"
+       android:layout_marginTop="@dimen/loginViewsMargin">
+    <EditText
+        style="@style/modifiedEditText"
+        android:hint="D.O.B"
+        android:maxLines="1"
+        android:id="@+id/ed_adm_dob"
+        />
+   </com.google.android.material.textfield.TextInputLayout>
+   <Spinner
+       android:layout_width="match_parent"
+       android:layout_marginTop="20dp"
+       android:layout_height="wrap_content"
+       android:entries="@array/Gender"
+       android:background="@drawable/spinnerbg"
+       android:id="@+id/sp_adm_gender"
+       />
+   <com.google.android.material.textfield.TextInputLayout
+       style="@style/parent"
+       android:layout_marginTop="@dimen/loginViewsMargin">
+    <EditText
+        style="@style/modifiedEditText"
+        android:hint="Address"
+        android:maxLines="1"
+        android:id="@+id/ed_adm_address"
+        />
+   </com.google.android.material.textfield.TextInputLayout>
+   <com.google.android.material.textfield.TextInputLayout
+       style="@style/parent"
+       android:layout_marginTop="@dimen/loginViewsMargin">
+    <EditText
+        style="@style/modifiedEditText"
+        android:hint="State"
+        android:maxLines="1"
+        android:id="@+id/ed_adm_state"
+        />
+   </com.google.android.material.textfield.TextInputLayout> <com.google.android.material.textfield.TextInputLayout
+      style="@style/parent"
+      android:layout_marginTop="@dimen/loginViewsMargin">
+   <EditText
+       style="@style/modifiedEditText"
+       android:hint="City"
+       android:maxLines="1"
+       android:id="@+id/ed_adm_city"
+       />
+  </com.google.android.material.textfield.TextInputLayout>
+   <com.google.android.material.textfield.TextInputLayout
+       style="@style/parent"
+       android:layout_marginTop="@dimen/loginViewsMargin">
+    <EditText
+        style="@style/modifiedEditText"
+        android:hint="Zip Code"
+        android:maxLines="1"
+        android:id="@+id/ed_adm_zip_code"
+        />
+   </com.google.android.material.textfield.TextInputLayout>
+   <com.google.android.material.textfield.TextInputLayout
+       style="@style/parent"
+       android:layout_marginTop="@dimen/loginViewsMargin">
+    <EditText
+        style="@style/modifiedEditText"
+        android:hint="Email"
+        android:maxLines="1"
+        android:id="@+id/ed_adm_email"
+        />
+   </com.google.android.material.textfield.TextInputLayout>
+   <com.google.android.material.textfield.TextInputLayout
+       style="@style/parent"
+       android:layout_marginTop="@dimen/loginViewsMargin">
+    <EditText
+        style="@style/modifiedEditText"
+        android:hint="Mobile Number"
+        android:maxLines="1"
+        android:id="@+id/ed_adm_mobileno"
+        />
+   </com.google.android.material.textfield.TextInputLayout>
+   <com.google.android.material.textfield.TextInputLayout
+       style="@style/parent"
+       android:layout_marginTop="@dimen/loginViewsMargin">
+    <EditText
+        style="@style/modifiedEditText"
+        android:hint="Course"
+        android:maxLines="1"
+        android:id="@+id/ed_adm_course"
+        />
+   </com.google.android.material.textfield.TextInputLayout>
+
+
+   <Button
+       android:id="@+id/bt_adm_submit"
+       style="@style/loginButton"
+       android:text="Submit"
+
+       android:layout_gravity="center_horizontal"
+       android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+
+
+  </LinearLayout>
+
+ </androidx.cardview.widget.CardView>
+</RelativeLayout>
+
+</ScrollView>

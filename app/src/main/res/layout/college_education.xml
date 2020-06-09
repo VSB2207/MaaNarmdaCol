@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin">
+
+        <ImageView
+            style="@style/headerTextPrimary"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:src="@drawable/mnce"
+            />
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:text="About us"
+            android:textSize="35dp"
+
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="arial"
+            android:padding="10dp"
+            android:text="Maa Narmada College of Education, Dhamnod is a platform where knowledge, resources and opportunities meet. In the age of globalization, to build a truly different institution of teacher education in Dhamnod (M.P.) an institution with a marked difference in quality to serve the local people in global arena. Our aim is to build an effervescent community of Teachers, where faculty and students are cronies in a mutually inspirational education process, engrossed in learning. MNCE is one of the most ambitious educational initiatives place of Nimaad Region of Madhya Pradesh."
+            android:textColor="#000"
+            android:textSize="29dp" />
+
+        <Button
+            android:id="@+id/enquiry"
+            style="@style/loginButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:text="Enquiry" />
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

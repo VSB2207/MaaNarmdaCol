@@ -1,0 +1,38 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="290dp"
+    android:layout_margin="16px"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/whiteCardColor"
+    android:layout_marginTop="15dp"
+    app:cardCornerRadius="20dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <WebView
+            android:id="@+id/webView_youtube"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+            android:layout_marginBottom="20dp"
+
+            android:layout_gravity="start"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Hello There"
+            android:maxLength="60"
+            android:textSize="16sp"
+            android:padding="5px"
+            android:textColor="#121313"
+            android:id="@+id/TV_youtube"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>

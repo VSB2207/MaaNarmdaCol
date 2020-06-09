@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_naviagtion_view"
+    app:startDestination="@+id/notes">
+
+    <activity
+        android:id="@+id/admission"
+        android:name="com.example.college.admission_activity"
+        android:label="Admission"
+        tools:layout="@layout/activity_admission_activity" />
+
+    <activity
+        android:id="@+id/enquiry"
+        android:name="com.example.college.enquiry_activity"
+        android:label="Enquiry"
+        tools:layout="@layout/activity_enquiry_activity" />
+
+    <fragment
+        android:id="@+id/notes"
+        android:name="com.example.college.notes_frag"
+        android:label="Notes"
+        tools:layout="@layout/fragment_notes_frag"
+        />
+    <fragment
+        android:id="@+id/lecture"
+        android:name="com.example.college.lectures_frag"
+        android:label="Lectures"
+        tools:layout="@layout/fragment_lectures_frag"
+        />
+    <fragment
+        android:id="@+id/live"
+        android:name="com.example.college.live_frag"
+        android:label="Live"
+        tools:layout="@layout/fragment_live_frag"
+        />
+    <activity
+        android:id="@+id/payment"
+        android:name="com.example.college.paymentgatway"
+        android:label="Payment"
+        tools:layout="@layout/activity_paymentgatway"/>
+
+</navigation>
