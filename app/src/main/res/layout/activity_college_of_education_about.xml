@@ -1,174 +1,324 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
     android:layout_width="match_parent">
 
+    <com.denzcoskun.imageslider.ImageSlider
+        android:layout_width="match_parent"
+        android:id="@+id/college_slider"
+        app:auto_cycle="true"
+        app:delay="0"
+        app:period="1000"
+        app:corner_radius="5"
+        android:layout_height="210dp">
+
+    </com.denzcoskun.imageslider.ImageSlider>
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/college_slider">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#fca311"
+            android:id="@+id/aboutus"
+            android:text="About us"
+            android:textSize="30dp"
+
+            />
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutus">
+
         <androidx.cardview.widget.CardView
             style="@style/loginCard"
             app:cardCornerRadius="@dimen/loginCardRadius"
             android:elevation="5dp"
-            android:layout_gravity="center"
             android:layout_marginTop="@dimen/loginViewsMargin"
             android:layout_marginBottom="@dimen/loginViewsMargin"
             android:background="@color/whiteCardColor">
 
-
-
-            <LinearLayout
+           <LinearLayout
                 style="@style/linearParent"
                 android:layout_gravity="center"
                 android:padding="@dimen/loginViewsMargin">
 
-                <ImageView
-                    style="@style/headerTextPrimary"
-                    android:layout_width="180dp"
-                    android:layout_height="180dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="@dimen/loginViewsMargin"
-                    android:src="@drawable/mnce"
-                    />
+<!--                <ImageView-->
+<!--                    style="@style/headerTextPrimary"-->
+<!--                    android:layout_width="180dp"-->
+<!--                    android:layout_height="180dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginTop="@dimen/loginViewsMargin"-->
+<!--                    android:src="@drawable/mnce"-->
+<!--                    />-->
 
+<!--                <TextView-->
+<!--                    style="@style/headerTextPrimary"-->
+<!--                    android:text="About us"-->
+<!--                    android:textSize="35dp"-->
+
+<!--                    />-->
                 <TextView
-                    style="@style/headerTextPrimary"
-                    android:text="About us"
-                    android:textSize="35dp"
-
-                    />
-                <TextView
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="arial"
-                    android:padding="10dp"
                     android:text="Maa Narmada College of Education, Dhamnod is a platform where knowledge, resources and opportunities meet. In the age of globalization, to build a truly different institution of teacher education in Dhamnod (M.P.) an institution with a marked difference in quality to serve the local people in global arena. Our aim is to build an effervescent community of Teachers, where faculty and students are cronies in a mutually inspirational education process, engrossed in learning. MNCE is one of the most ambitious educational initiatives place of Nimaad Region of Madhya Pradesh."
-                    android:textColor="#000"
+                    android:textColor="#555b6e"
+                    android:textStyle="normal|bold"
                     android:textSize="16dp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Courses:"
-                    android:fontFamily="arial"
-                    android:layout_gravity="center"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:padding="10dp"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="B.ED , D.ED "
-                    android:fontFamily="arial"
-                    android:textColor="#000"
-                    android:padding="20dp"
-                    />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:layout_marginRight="30dp">
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Enquiry now?"-->
+<!--                    android:textColor="	#0000ff"-->
+<!--                    android:textSize="20dp"-->
+<!--                    android:textStyle="bold|italic"/>-->
+
+            </LinearLayout>
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text=" Our Courses:"
+                   android:fontFamily="sans-serif-black"
+                   android:textSize="28dp"
+                   android:gravity="center"
+                   android:layout_marginTop="20dp"
+                   android:textStyle="bold|italic"
+                   android:textColor="#ffff"
+                   android:background="#00171f"
+                   android:layout_gravity="center"
+                   android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                   />
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="#00171f"
+
+                   android:layout_gravity="center"
+                   android:orientation="horizontal">
+
+                   <ImageView
+                       android:layout_width="188dp"
+                       android:layout_height="100dp"
+                       android:src="@drawable/bed"></ImageView>
+
+                   <ImageView
+                       android:layout_width="222dp"
+                       android:layout_height="100dp"
+                       android:src="@drawable/ded"></ImageView>
 
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Contact:"
-                    android:fontFamily="arial"
-                    style="bold"
-                    android:layout_gravity="center"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                    android:padding="10dp"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="+919644005580 \n mncedhamnod14@gmail.com"
-                    android:textColor="#000"
-                    android:padding="10dp"
-                    />
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="10dp"
+                   >
+
+                   <ImageView
+                       android:layout_width="32dp"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/registration"></ImageView>
+
+                   <TextView
+                       android:id="@+id/college_admission"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="5px"
+                       android:fontFamily="sans-serif-black"
+                       android:text="Admission"
+                       android:clickable="true"
+                       android:textColor="#ff6d00"
+                       android:textSize="28sp" />
+
+                   <ImageView
+                       android:layout_width="32dp"
+                       android:layout_height="match_parent"
+                       android:layout_marginLeft="25dp"
+                       android:src="@drawable/enquiry2"></ImageView>
+
+                   <TextView
+                       android:id="@+id/query"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="sans-serif-black"
+                       android:text="Enquiry now"
+                       android:clickable="true"
+                       android:textColor="#ff6d00"
+                       android:textSize="28sp" />
+               </LinearLayout>
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="B.ED , D.ED "-->
+<!--                    android:fontFamily="arial"-->
+<!--                    android:textColor="#000"-->
+<!--                    android:padding="20dp"-->
+<!--                    />-->
 
 
-                <Button
-                    android:id="@+id/bt_collegeOfEducation_enquiry"
-                    style="@style/loginButton"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="@dimen/loginViewsMargin"
-                    android:text="Admission-Enquiry" />
-                <Button
-                    android:id="@+id/bt_collegeOfEducation_admission"
-                    style="@style/loginButton"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="@dimen/loginViewsMargin"
-                    android:padding="10dp"
-                    android:text="Admission-Registration"
-                    />
-                <Button
-                    android:id="@+id/bt_collegeOfEducation_gallery"
-                    style="@style/loginButton"
-                    android:text="Gallery"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="@dimen/loginViewsMargin"
-                    />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:weightSum="2"
-                    android:layout_marginTop="20dp"
-                    android:orientation="horizontal"
-                    >
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:layout_weight="1"
-                        android:visibility="gone"
-                        android:layout_margin="8dp"
-                        android:id="@+id/IV_collegeOfEducation_image1"
-                        android:background="@drawable/ce_1"
-                        />
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:layout_weight="1"
-                        android:id="@+id/IV_collegeOfEducation_image2"
-                        android:visibility="gone"
-                        android:layout_margin="8dp"
-                        android:background="@drawable/ce_2"
-                        />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Contact Us:"
+                   android:fontFamily="sans-serif-black"
+                   style="bold"
+                   android:background="#adb5bd"
+                   android:textSize="15sp"
+                   android:layout_marginTop="20dp"
+                   android:textStyle="bold|italic"
+                   android:textColor="#000000"
+                   android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                   />
 
-                </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="#adb5bd">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:weightSum="2"
-                    android:layout_marginTop="20dp"
-                    android:orientation="horizontal"
-                    >
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/phone"
+                       ></ImageView>
 
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:layout_weight="1"
-                        android:layout_margin="8dp"
-                        android:id="@+id/IV_collegeOfEducation_image3"
-                        android:visibility="gone"
-                        android:background="@drawable/ce_3"
-                        />
-                    <ImageView
-                        android:layout_width="200dp"
-                        android:layout_height="200dp"
-                        android:layout_weight="1"
-                        android:layout_margin="8dp"
-                        android:background="@drawable/ce_4"
-                        android:id="@+id/IV_collegeOfEducation_image4"
-                        android:visibility="gone"
-                        />
 
-                </LinearLayout>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="5px"
+                       android:text="+919644005580"
+                       android:textSize="14dp"
+                       android:textColor="#000"
+                       />
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="20dp"
+                       android:src="@drawable/ic_mail_outline_black_24dp"
+                       ></ImageView>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textSize="14dp"
+                       android:layout_marginLeft="5px"
+                       android:text="mncedhamnod14@gmail.com"
+                       android:textColor="#000"
+                       />
+               </LinearLayout>
+
+
+
+
+
+
+
+
+<!--                <Button-->
+<!--                    android:id="@+id/bt_collegeOfEducation_enquiry"-->
+<!--                    style="@style/loginButton"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginTop="@dimen/loginViewsMargin"-->
+<!--                    android:text="Admission-Enquiry" />-->
+<!--                <Button-->
+<!--                    android:id="@+id/bt_collegeOfEducation_admission"-->
+<!--                    style="@style/loginButton"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginTop="@dimen/loginViewsMargin"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:text="Admission-Registration"-->
+<!--                    />-->
+<!--                <Button-->
+<!--                    android:id="@+id/bt_collegeOfEducation_gallery"-->
+<!--                    style="@style/loginButton"-->
+<!--                    android:text="Gallery"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginTop="@dimen/loginViewsMargin"-->
+<!--                    />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:weightSum="2"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    >-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="200dp"-->
+<!--                        android:layout_height="200dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:visibility="gone"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        android:id="@+id/IV_collegeOfEducation_image1"-->
+<!--                        android:background="@drawable/ce_1"-->
+<!--                        />-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="200dp"-->
+<!--                        android:layout_height="200dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:id="@+id/IV_collegeOfEducation_image2"-->
+<!--                        android:visibility="gone"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        android:background="@drawable/ce_2"-->
+<!--                        />-->
+
+<!--                </LinearLayout>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:weightSum="2"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    >-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="200dp"-->
+<!--                        android:layout_height="200dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        android:id="@+id/IV_collegeOfEducation_image3"-->
+<!--                        android:visibility="gone"-->
+<!--                        android:background="@drawable/ce_3"-->
+<!--                        />-->
+<!--                    <ImageView-->
+<!--                        android:layout_width="200dp"-->
+<!--                        android:layout_height="200dp"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_margin="8dp"-->
+<!--                        android:background="@drawable/ce_4"-->
+<!--                        android:id="@+id/IV_collegeOfEducation_image4"-->
+<!--                        android:visibility="gone"-->
+<!--                        />-->
+
+<!--                </LinearLayout>-->
 
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
+        </ScrollView>
 
     </RelativeLayout>
-</ScrollView>
+</RelativeLayout>

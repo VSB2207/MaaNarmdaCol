@@ -11,8 +11,7 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_centerInParent="true"
-        android:background="@drawable/maa"/>
-
+        android:background="@drawable/maa" />
 
 
 </RelativeLayout>

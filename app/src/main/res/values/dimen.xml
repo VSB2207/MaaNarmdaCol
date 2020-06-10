@@ -3,7 +3,7 @@
     <dimen name="headerTextSize">22sp</dimen>
     <dimen name="newsMoreTextSize">12sp</dimen>
     <dimen name="loginCardRadius">20dp</dimen>
-    <dimen name="loginViewsMargin">20dp</dimen>
+    <dimen name="loginViewsMargin">10dp</dimen>
 
     <dimen name="signup_text_margin_top">10dp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->
